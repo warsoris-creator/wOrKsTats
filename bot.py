@@ -12,6 +12,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 import gspread
 from google.oauth2.service_account import Credentials
 
+logging.basicConfig(level=logging.INFO)
 # ===================== НАСТРОЙКИ =====================
 BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_TOKEN_HERE")
 bot = Bot(token=BOT_TOKEN)
