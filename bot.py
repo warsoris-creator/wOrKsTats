@@ -1,7 +1,6 @@
 import asyncio
 import logging
 import json
-import os
 from datetime import datetime
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
@@ -13,8 +12,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 
 # ===================== НАСТРОЙКИ =====================
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8618765008:AAHv_2f29r30puE2A_8TjjWZJsJGWKr49Pw")
-bot = Bot(token=BOT_TOKEN)
+BOT_TOKEN = '8618765008:AAHv_2f29r30puE2A_8TjjWZJsJGWKr49Pw'
 SHEET_ID = '13vZPiFQZxUOrCbCjeDuIWK6H7s57rXsaM2Zv_QlNbiE'
 SHEET_NAME = 'отчет по средствам на карте'
 WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbz_EjCPMmN8OnEcS8CeTDjhuwJuEJ7DR49ef16aJo3wqi2DmwXGa0dLkyz62lRmpYXG/exec?page=dashboard'
