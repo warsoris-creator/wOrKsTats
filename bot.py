@@ -12,7 +12,9 @@ import gspread
 from google.oauth2.service_account import Credentials
 
 # ===================== НАСТРОЙКИ =====================
-BOT_TOKEN = '8618765008:AAEsQFuuE8H3xUxnNicgx04dhoizhY2p0rQ'
+BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_TOKEN_HERE")
+bot = Bot(token=BOT_TOKEN)
+dp = Dispatcher()
 SHEET_ID = '13vZPiFQZxUOrCbCjeDuIWK6H7s57rXsaM2Zv_QlNbiE'
 SHEET_NAME = 'отчет по средствам на карте'
 WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbz_EjCPMmN8OnEcS8CeTDjhuwJuEJ7DR49ef16aJo3wqi2DmwXGa0dLkyz62lRmpYXG/exec?page=dashboard'
