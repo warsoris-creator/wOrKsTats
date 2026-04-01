@@ -12,9 +12,8 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 import gspread
 from google.oauth2.service_account import Credentials
 
-logging.basicConfig(level=logging.INFO)
 # ===================== НАСТРОЙКИ =====================
-BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_TOKEN_HERE")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8618765008:AAHv_2f29r30puE2A_8TjjWZJsJGWKr49Pw")
 bot = Bot(token=BOT_TOKEN)
 SHEET_ID = '13vZPiFQZxUOrCbCjeDuIWK6H7s57rXsaM2Zv_QlNbiE'
 SHEET_NAME = 'отчет по средствам на карте'
